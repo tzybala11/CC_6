@@ -37,3 +37,20 @@ console.log(emp2.describe());
 console.log(emp3.describe());
 console.log(man1.describe());
 console.log(man2.describe());
+
+// Step 5
+class Company {
+    constructor(employees) {
+        this.employees = [];
+    }
+
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+
+    listEmployees() {
+        this.employees.forEach(employee => {
+            console.log(employee.describe());
+        });
+    }
+}
