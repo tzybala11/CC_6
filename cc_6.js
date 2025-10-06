@@ -23,3 +23,17 @@ class Manager extends Employee {
         return `${this.name} manages a team of ${this.teamSize} in ${this.department}`;
     }
 }
+
+// Step 4
+const emp1 = new Employee("Lucia", "Finance");
+const emp2 = new Employee("Frank", "Sales");
+const emp3 = new Employee("Lucas", "Customer Service");
+
+const man1 = new Manager("Jaime", "Information Technology", 10);
+const man2 = new Manager("Bob", "Sales", 20);
+
+console.log(emp1.describe());
+console.log(emp2.describe());
+console.log(emp3.describe());
+console.log(man1.describe());
+console.log(man2.describe());
